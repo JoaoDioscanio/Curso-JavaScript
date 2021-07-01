@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>CFB Cursos - JavaScript</title>
+        <meta charset="utf-8">
+
+        <script>
+            var nota = prompt("Qual foi sua nota?");
+            var res;
+            //Aprovado com excelência
+            //Aprovado com louvor >= 95
+            //Aprovado >= 60
+            //Recuperação >= 40 && < 60
+            //Reprovado < 40
+
+            if(nota >= 60){
+                res = "Aprovado";
+                if(nota >= 95){
+                    if(nota == 100){
+                        res += " com excelência";
+                    }
+                    else{
+                        res += " com louvor";
+                    }
+                }
+            }
+            else if((nota >= 40)&&(nota <60)){
+                res = "Recuperação";
+            }
+            else{
+                res = "Reprovado";
+            }
+            document.write(res);
+
+        </script>
+    </head>
+    <body>
+
+    
+    </body>
+</html>
