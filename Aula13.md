@@ -4,7 +4,7 @@
 
 Adicionando elementos no array:
 
-```html
+```js
 var cor = [];
 cor.push = "Roxo";
 // Ou
@@ -19,7 +19,7 @@ cor[0] = "Roxo";
 
 Removendo elementos no array:
 
-```html
+```js
 var mochila = ["Faca", "Pedra", "Chave"];
 mochila.pop();
 // Ou
@@ -36,21 +36,21 @@ mochila.splice(1, 1);
 
 Organizando elementos do array:
 
-```html
+```js
 var mochila = ["Faca", "Pedra", "Chave"];
 mochila.indexOf("Chave");
 ```
 
 :arrow_right_hook: indexOf **indica** a posição de um elemento pesquisado
 
-```html
+```js
 var num = [5, 3, 1, 4, 2];
 num.sort();
 ```
 
 :arrow_right_hook: sort **ordena** os elementos
 
-```html
+```js
 var num = [5, 3, 1, 4, 2];
 num.sort();
 num.reverse();
@@ -58,7 +58,7 @@ num.reverse();
 
 :arrow_right_hook: reverse **inverte** a ordem dos elementos
 
-```html
+```js
 var num = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 var numeros;
 numeros = num.join();
@@ -66,14 +66,14 @@ numeros = num.join();
 
 :arrow_right_hook: join **retorna** todos os elementos do array em uma string
 
-```html
+```js
 var mochila = [], inventario1 = ["Chave", "Pedra", "Corda"], inventario2 = ["Lanterna"];
 mochila = inventario1.concat(inventario2);
 ```
 
 :arrow_right_hook: concat **concatena** arrays
 
-```html
+```js
 var mochila = ["Chave", "Pedra", "Corda"], tamanho_da_mochila;
 tamanho_da_mochila = mochila.lenght()
 ```
