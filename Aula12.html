@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>CFB Cursos - JavaScript</title>
+        <meta charset="utf-8">
+
+        <script>
+            var pos, msg
+            pos = prompt("Digite a posição:")
+            switch(pos){
+                case 1:
+                    msg = "Primeiro Lugar<br>Medalha de Ouro";
+                    break;
+                case 2:
+                    msg = "Segundo Lugar<br>Medalha de Prata";
+                    break;
+                case 3:
+                    msg = "Terceiro Lugar<br>Medalha de Bronze";
+                    break;
+                default:
+                    msg = "Não foi ao pódio<br>Não obteve medalha";
+            }
+            switch(pos){
+                case 1:
+                case 2:
+                case 3:
+                    msg += "<br>Subiu ao pódio";
+                    break;
+                default:
+                    msg += "<br>Não obteve colocação";
+            }
+            document.write(msg);
+        </script>
+    </head>
+    <body>
+
+    
+    </body>
+</html>
