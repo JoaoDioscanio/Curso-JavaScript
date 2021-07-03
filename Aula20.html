@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang=“pt-br”>
+    <head>
+        <title>Curso de Javascript</title>
+        <meta charset=“UTF-8”>
+        <script>
+            var num;
+            
+            try{
+                num = prompt("Digite um valor:");
+                if(num > 10){
+                    throw new Error("Valor inválido, o valor máximo é 10");
+                }
+            }
+            catch(e){
+                console.log("ERRO: " + e.message); // Envia uma mensagem de erro para o console
+                num = 10;
+            }
+            finally{
+                document.write("Valor: " + num);
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
