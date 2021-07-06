@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>CFB Cursos - JavaScript</title>
+        <meta charset="utf-8">
+        <script>
+            function relogio(){
+                var data = new Date();
+                var hour = data.getHours();
+                var min = data.getMinutes();
+                var seg = data.getSeconds();
+
+                var horas = hour + ":" + min + ":" + seg;
+                document.getElementById("rel").value = horas;
+            }
+            var tempo = setInterval(relogio,1000);
+        </script>
+    </head>
+    </body>
+        <input type="text" id="rel"/>
+    </body>
+</html>
