@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>CFB Cursos - JavaScript</title>
+        <meta charset="utf-8">
+        <style>
+            #quad{
+                border: 1px solid #000;
+                background-color: #f00;
+                width: 100px;
+                height: 100px;
+            }
+        </style>
+        <script>
+            
+        </script>
+    </head>
+    </body>
+        <div id="quad"></div>
+        <script>
+            var obj = document.getElementById("quad"), ang = 0, anima
+            function gira(){
+                obj.style.transform = "rotate("+ang+"deg)";
+                ang++;
+                if(ang>360){
+                    ang=0;
+                }
+                anima = requestAnimationFrame(gira);
+            }
+            gira();
+        </script>
+    </body>
+</html>
